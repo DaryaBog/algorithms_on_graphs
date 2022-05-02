@@ -70,7 +70,16 @@
             this.u2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NumBox = new System.Windows.Forms.TextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.button6 = new System.Windows.Forms.Button();
+            this.minDomRibBox = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.tableInput23 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.minDomPointBox = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.minRibBox = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.button7 = new System.Windows.Forms.Button();
             this.maxTwoBox = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.tableInput22 = new System.Windows.Forms.DataGridView();
@@ -93,16 +102,13 @@
             this.label6 = new System.Windows.Forms.Label();
             this.fileNameBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.button7 = new System.Windows.Forms.Button();
-            this.minRibBox = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.minDomPointBox = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.tableInput23 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colorRibBox = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.colorPointBox = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.tableInput24 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabControl2.SuspendLayout();
@@ -112,10 +118,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.tableRib2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tableInput)).BeginInit();
             this.tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tableInput23)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tableInput22)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tableInput21)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tableInput2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tableInput23)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tableInput24)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -515,15 +522,19 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.tableInput24);
+            this.tabPage2.Controls.Add(this.colorRibBox);
+            this.tabPage2.Controls.Add(this.label13);
+            this.tabPage2.Controls.Add(this.colorPointBox);
+            this.tabPage2.Controls.Add(this.label14);
+            this.tabPage2.Controls.Add(this.minDomRibBox);
+            this.tabPage2.Controls.Add(this.label12);
             this.tabPage2.Controls.Add(this.tableInput23);
-            this.tabPage2.Controls.Add(this.button9);
             this.tabPage2.Controls.Add(this.minDomPointBox);
             this.tabPage2.Controls.Add(this.label11);
-            this.tabPage2.Controls.Add(this.button8);
             this.tabPage2.Controls.Add(this.minRibBox);
             this.tabPage2.Controls.Add(this.label10);
             this.tabPage2.Controls.Add(this.button7);
-            this.tabPage2.Controls.Add(this.button6);
             this.tabPage2.Controls.Add(this.maxTwoBox);
             this.tabPage2.Controls.Add(this.label9);
             this.tabPage2.Controls.Add(this.tableInput22);
@@ -546,19 +557,98 @@
             this.tabPage2.Text = "ЛР2";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // button6
+            // minDomRibBox
             // 
-            this.button6.Location = new System.Drawing.Point(253, 236);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(238, 32);
-            this.button6.TabIndex = 30;
-            this.button6.Text = "Макс. паросочетание";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
+            this.minDomRibBox.Location = new System.Drawing.Point(253, 281);
+            this.minDomRibBox.Name = "minDomRibBox";
+            this.minDomRibBox.Size = new System.Drawing.Size(324, 22);
+            this.minDomRibBox.TabIndex = 40;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(253, 261);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(317, 17);
+            this.label12.TabIndex = 39;
+            this.label12.Text = "Наименьшее доминирующее множество ребер";
+            // 
+            // tableInput23
+            // 
+            this.tableInput23.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
+            this.tableInput23.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllHeaders;
+            this.tableInput23.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.tableInput23.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn11,
+            this.dataGridViewTextBoxColumn12});
+            this.tableInput23.Location = new System.Drawing.Point(622, 132);
+            this.tableInput23.Name = "tableInput23";
+            this.tableInput23.RowHeadersWidth = 51;
+            this.tableInput23.RowTemplate.Height = 24;
+            this.tableInput23.Size = new System.Drawing.Size(238, 31);
+            this.tableInput23.TabIndex = 38;
+            this.tableInput23.Visible = false;
+            this.tableInput23.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tableInput23_CellContentClick);
+            // 
+            // dataGridViewTextBoxColumn11
+            // 
+            this.dataGridViewTextBoxColumn11.HeaderText = "u1";
+            this.dataGridViewTextBoxColumn11.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
+            this.dataGridViewTextBoxColumn11.Width = 53;
+            // 
+            // dataGridViewTextBoxColumn12
+            // 
+            this.dataGridViewTextBoxColumn12.HeaderText = "u2";
+            this.dataGridViewTextBoxColumn12.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
+            this.dataGridViewTextBoxColumn12.Width = 53;
+            // 
+            // minDomPointBox
+            // 
+            this.minDomPointBox.Location = new System.Drawing.Point(253, 236);
+            this.minDomPointBox.Name = "minDomPointBox";
+            this.minDomPointBox.Size = new System.Drawing.Size(324, 22);
+            this.minDomPointBox.TabIndex = 36;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(253, 216);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(327, 17);
+            this.label11.TabIndex = 35;
+            this.label11.Text = "Наименьшее доминирующее множество вершин";
+            // 
+            // minRibBox
+            // 
+            this.minRibBox.Location = new System.Drawing.Point(253, 191);
+            this.minRibBox.Name = "minRibBox";
+            this.minRibBox.Size = new System.Drawing.Size(324, 22);
+            this.minRibBox.TabIndex = 33;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(253, 171);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(235, 17);
+            this.label10.TabIndex = 32;
+            this.label10.Text = "Минимальное рёберное покрытие";
+            // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(9, 377);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(238, 32);
+            this.button7.TabIndex = 31;
+            this.button7.Text = "Посчитать степени для G";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // maxTwoBox
             // 
-            this.maxTwoBox.Location = new System.Drawing.Point(253, 349);
+            this.maxTwoBox.Location = new System.Drawing.Point(253, 143);
             this.maxTwoBox.Name = "maxTwoBox";
             this.maxTwoBox.Size = new System.Drawing.Size(324, 22);
             this.maxTwoBox.TabIndex = 29;
@@ -566,7 +656,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(253, 329);
+            this.label9.Location = new System.Drawing.Point(253, 123);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(247, 17);
             this.label9.TabIndex = 28;
@@ -580,12 +670,13 @@
             this.tableInput22.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn9,
             this.dataGridViewTextBoxColumn10});
-            this.tableInput22.Location = new System.Drawing.Point(253, 274);
+            this.tableInput22.Location = new System.Drawing.Point(622, 87);
             this.tableInput22.Name = "tableInput22";
             this.tableInput22.RowHeadersWidth = 51;
             this.tableInput22.RowTemplate.Height = 24;
-            this.tableInput22.Size = new System.Drawing.Size(238, 52);
+            this.tableInput22.Size = new System.Drawing.Size(238, 28);
             this.tableInput22.TabIndex = 26;
+            this.tableInput22.Visible = false;
             // 
             // dataGridViewTextBoxColumn9
             // 
@@ -609,12 +700,13 @@
             this.tableInput21.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn7,
             this.dataGridViewTextBoxColumn8});
-            this.tableInput21.Location = new System.Drawing.Point(252, 87);
+            this.tableInput21.Location = new System.Drawing.Point(622, 52);
             this.tableInput21.Name = "tableInput21";
             this.tableInput21.RowHeadersWidth = 51;
             this.tableInput21.RowTemplate.Height = 24;
-            this.tableInput21.Size = new System.Drawing.Size(238, 53);
+            this.tableInput21.Size = new System.Drawing.Size(238, 29);
             this.tableInput21.TabIndex = 25;
+            this.tableInput21.Visible = false;
             this.tableInput21.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // dataGridViewTextBoxColumn7
@@ -633,7 +725,7 @@
             // 
             // maxPointBox
             // 
-            this.maxPointBox.Location = new System.Drawing.Point(252, 208);
+            this.maxPointBox.Location = new System.Drawing.Point(252, 98);
             this.maxPointBox.Name = "maxPointBox";
             this.maxPointBox.Size = new System.Drawing.Size(324, 22);
             this.maxPointBox.TabIndex = 24;
@@ -641,7 +733,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(252, 188);
+            this.label8.Location = new System.Drawing.Point(252, 78);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(324, 17);
             this.label8.TabIndex = 23;
@@ -649,7 +741,7 @@
             // 
             // minBox
             // 
-            this.minBox.Location = new System.Drawing.Point(252, 163);
+            this.minBox.Location = new System.Drawing.Point(252, 53);
             this.minBox.Name = "minBox";
             this.minBox.Size = new System.Drawing.Size(324, 22);
             this.minBox.TabIndex = 22;
@@ -657,7 +749,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(253, 143);
+            this.label7.Location = new System.Drawing.Point(253, 33);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(159, 17);
             this.label7.TabIndex = 21;
@@ -679,11 +771,11 @@
             this.tableInput2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn5,
             this.dataGridViewTextBoxColumn6});
-            this.tableInput2.Location = new System.Drawing.Point(9, 23);
+            this.tableInput2.Location = new System.Drawing.Point(9, 65);
             this.tableInput2.Name = "tableInput2";
             this.tableInput2.RowHeadersWidth = 51;
             this.tableInput2.RowTemplate.Height = 24;
-            this.tableInput2.Size = new System.Drawing.Size(238, 348);
+            this.tableInput2.Size = new System.Drawing.Size(238, 306);
             this.tableInput2.TabIndex = 19;
             // 
             // dataGridViewTextBoxColumn5
@@ -710,11 +802,11 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(253, 31);
+            this.button5.Location = new System.Drawing.Point(9, 24);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(238, 50);
+            this.button5.Size = new System.Drawing.Size(238, 35);
             this.button5.TabIndex = 17;
-            this.button5.Text = "Мин. покрытие и макс. независимое мн.вершин";
+            this.button5.Text = "Посчитать для G";
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
@@ -753,96 +845,69 @@
             this.label2.TabIndex = 6;
             this.label2.Text = "Вариант";
             // 
-            // button7
+            // colorRibBox
             // 
-            this.button7.Location = new System.Drawing.Point(9, 377);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(238, 32);
-            this.button7.TabIndex = 31;
-            this.button7.Text = "Посчитать степени для G";
-            this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
+            this.colorRibBox.Location = new System.Drawing.Point(253, 486);
+            this.colorRibBox.Multiline = true;
+            this.colorRibBox.Name = "colorRibBox";
+            this.colorRibBox.Size = new System.Drawing.Size(324, 140);
+            this.colorRibBox.TabIndex = 44;
             // 
-            // minRibBox
+            // label13
             // 
-            this.minRibBox.Location = new System.Drawing.Point(256, 438);
-            this.minRibBox.Name = "minRibBox";
-            this.minRibBox.Size = new System.Drawing.Size(324, 22);
-            this.minRibBox.TabIndex = 33;
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(253, 466);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(145, 17);
+            this.label13.TabIndex = 43;
+            this.label13.Text = "Рёберная раскраска";
             // 
-            // label10
+            // colorPointBox
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(256, 418);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(235, 17);
-            this.label10.TabIndex = 32;
-            this.label10.Text = "Минимальное рёберное покрытие";
+            this.colorPointBox.Location = new System.Drawing.Point(253, 326);
+            this.colorPointBox.Multiline = true;
+            this.colorPointBox.Name = "colorPointBox";
+            this.colorPointBox.Size = new System.Drawing.Size(324, 137);
+            this.colorPointBox.TabIndex = 42;
             // 
-            // button8
+            // label14
             // 
-            this.button8.Location = new System.Drawing.Point(255, 377);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(238, 32);
-            this.button8.TabIndex = 34;
-            this.button8.Text = "Мин. реберное покрытие";
-            this.button8.UseVisualStyleBackColor = true;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(253, 306);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(156, 17);
+            this.label14.TabIndex = 41;
+            this.label14.Text = "Вершинная раскраска";
             // 
-            // button9
+            // tableInput24
             // 
-            this.button9.Location = new System.Drawing.Point(256, 466);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(238, 32);
-            this.button9.TabIndex = 37;
-            this.button9.Text = "Мин. домин. мн-во вершин";
-            this.button9.UseVisualStyleBackColor = true;
-            this.button9.Click += new System.EventHandler(this.button9_Click);
+            this.tableInput24.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
+            this.tableInput24.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllHeaders;
+            this.tableInput24.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.tableInput24.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn13,
+            this.dataGridViewTextBoxColumn14});
+            this.tableInput24.Location = new System.Drawing.Point(622, 169);
+            this.tableInput24.Name = "tableInput24";
+            this.tableInput24.RowHeadersWidth = 51;
+            this.tableInput24.RowTemplate.Height = 24;
+            this.tableInput24.Size = new System.Drawing.Size(238, 28);
+            this.tableInput24.TabIndex = 45;
+            this.tableInput24.Visible = false;
             // 
-            // minDomPointBox
+            // dataGridViewTextBoxColumn13
             // 
-            this.minDomPointBox.Location = new System.Drawing.Point(257, 527);
-            this.minDomPointBox.Name = "minDomPointBox";
-            this.minDomPointBox.Size = new System.Drawing.Size(324, 22);
-            this.minDomPointBox.TabIndex = 36;
+            this.dataGridViewTextBoxColumn13.HeaderText = "u1";
+            this.dataGridViewTextBoxColumn13.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
+            this.dataGridViewTextBoxColumn13.Width = 53;
             // 
-            // label11
+            // dataGridViewTextBoxColumn14
             // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(257, 507);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(327, 17);
-            this.label11.TabIndex = 35;
-            this.label11.Text = "Наименьшее доминирующее множество вершин";
-            // 
-            // tableInput23
-            // 
-            this.tableInput23.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
-            this.tableInput23.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllHeaders;
-            this.tableInput23.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.tableInput23.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn11,
-            this.dataGridViewTextBoxColumn12});
-            this.tableInput23.Location = new System.Drawing.Point(256, 555);
-            this.tableInput23.Name = "tableInput23";
-            this.tableInput23.RowHeadersWidth = 51;
-            this.tableInput23.RowTemplate.Height = 24;
-            this.tableInput23.Size = new System.Drawing.Size(238, 53);
-            this.tableInput23.TabIndex = 38;
-            // 
-            // dataGridViewTextBoxColumn11
-            // 
-            this.dataGridViewTextBoxColumn11.HeaderText = "u1";
-            this.dataGridViewTextBoxColumn11.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
-            this.dataGridViewTextBoxColumn11.Width = 53;
-            // 
-            // dataGridViewTextBoxColumn12
-            // 
-            this.dataGridViewTextBoxColumn12.HeaderText = "u2";
-            this.dataGridViewTextBoxColumn12.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
-            this.dataGridViewTextBoxColumn12.Width = 53;
+            this.dataGridViewTextBoxColumn14.HeaderText = "u2";
+            this.dataGridViewTextBoxColumn14.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn14.Name = "dataGridViewTextBoxColumn14";
+            this.dataGridViewTextBoxColumn14.Width = 53;
             // 
             // Form1
             // 
@@ -868,10 +933,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.tableInput)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tableInput23)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tableInput22)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tableInput21)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tableInput2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tableInput23)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tableInput24)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -943,17 +1009,23 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
         private System.Windows.Forms.TextBox maxTwoBox;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.TextBox minRibBox;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button9;
         private System.Windows.Forms.TextBox minDomPointBox;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.DataGridView tableInput23;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn12;
+        private System.Windows.Forms.TextBox minDomRibBox;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.TextBox colorRibBox;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.TextBox colorPointBox;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.DataGridView tableInput24;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn13;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn14;
     }
 }
 

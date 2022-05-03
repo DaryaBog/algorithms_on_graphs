@@ -63,6 +63,13 @@ namespace GraphLab
                 var array = line.Split();
                 tableInput24.Rows.Add(array);
             }
+
+            tableInput3.Rows.Clear();
+            foreach (var line in File.ReadLines(filename))
+            {
+                var array = line.Split();
+                tableInput3.Rows.Add(array);
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -321,9 +328,10 @@ namespace GraphLab
             M1Box2.Clear();
             M2Box2.Clear();
             MIBox2.Clear();
+            int value = Convert.ToInt32(NumBox2.Text);
             int volence = 0; // степень вершины
             string rib = "";
-            for (int n = 1; n <= Convert.ToInt32(NumBox2.Text); n++) // перебор всех вершин от 1 до n
+            for (int n = 1; n <= value; n++) // перебор всех вершин от 1 до n
             {
                 oBox2.Text += "Окрестность вершины " + n + ": ";
                 for (int i = 0; i < tableRib2.RowCount - 1; i++)
@@ -353,7 +361,7 @@ namespace GraphLab
 
                 //// для матрицы смежности вершин
 
-                for (int m = 1; m <= Convert.ToInt32(NumBox2.Text); m++)
+                for (int m = 1; m <= value; m++)
                 {
 
                     bool o = false;
@@ -849,10 +857,77 @@ namespace GraphLab
             }
         }
 
-
         private void tableInput23_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+        }
+        // Lab3
+        private void button6_Click(object sender, EventArgs e)
+        {
+            // DFS
+            List<int> stack = new List<int>();
+            List<int> visited = new List<int>();
+            int start = Convert.ToInt32(tableInput3[0, 0].Value);
+            //visited.Add(start);
+            stack.Add(start);
+            while(stack.Count != 0)
+            {
+                stack.Remove(start);
+                if(!visited.Contains(start)) visited.Add(start);
+                visitedBox.Text += start + ", ";
+                for (int i = 0; i < tableInput3.RowCount - 1; i++)
+                {
+                    int i0 = Convert.ToInt32(tableInput3[0, i].Value);
+                    int i1 = Convert.ToInt32(tableInput3[1, i].Value);
+                    if (visited.Last() == i0 && !visited.Contains(i1) && !stack.Contains(i1))
+                    {
+                        stack.Add(i1);
+                    }
+                    else if (visited.Last() == i1 && !visited.Contains(i0) && !stack.Contains(i0))
+                    {
+                        stack.Add(i0);
+                    }
+                }
+                if (stack.Count == 0) break;
+                start = stack.Last();
+                for(int i = 0; i < stack.Count; i++)
+                {
+                    stackBox.Text += stack[i] + ", ";
+                }
+                stackBox.Text += Environment.NewLine;
+            }
 
+            // BFS
+            List<int> queue = new List<int>();
+            List<int> visited2 = new List<int>();
+            int start2 = Convert.ToInt32(tableInput3[0, 0].Value);
+            //visited.Add(start);
+            queue.Add(start2);
+            while (queue.Count != 0)
+            {
+                queue.Remove(start2);
+                if (!visited2.Contains(start2)) visited2.Add(start2);
+                visitedBox2.Text += start2 + ", ";
+                for (int i = 0; i < tableInput3.RowCount - 1; i++)
+                {
+                    int i0 = Convert.ToInt32(tableInput3[0, i].Value);
+                    int i1 = Convert.ToInt32(tableInput3[1, i].Value);
+                    if (visited2.Last() == i0 && !visited2.Contains(i1) && !queue.Contains(i1))
+                    {
+                        queue.Add(i1);
+                    }
+                    else if (visited2.Last() == i1 && !visited2.Contains(i0) && !queue.Contains(i0))
+                    {
+                        queue.Add(i0);
+                    }
+                }
+                if (queue.Count == 0) break;
+                start2 = queue.First();
+                for (int i = 0; i < queue.Count; i++)
+                {
+                    stackBox2.Text += queue[i] + ", ";
+                }
+                stackBox2.Text += Environment.NewLine;
+            }
         }
     }
 }

@@ -70,6 +70,13 @@
             this.u2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NumBox = new System.Windows.Forms.TextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.tableInput24 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colorRibBox = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.colorPointBox = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
             this.minDomRibBox = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.tableInput23 = new System.Windows.Forms.DataGridView();
@@ -100,15 +107,26 @@
             this.button5 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.stackBox = new System.Windows.Forms.TextBox();
+            this.visitedBox = new System.Windows.Forms.TextBox();
+            this.numBox3 = new System.Windows.Forms.TextBox();
+            this.button6 = new System.Windows.Forms.Button();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.tableInput3 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fileNameBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.colorRibBox = new System.Windows.Forms.TextBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.colorPointBox = new System.Windows.Forms.TextBox();
-            this.label14 = new System.Windows.Forms.Label();
-            this.tableInput24 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.stackBox2 = new System.Windows.Forms.TextBox();
+            this.visitedBox2 = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabControl2.SuspendLayout();
@@ -118,11 +136,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.tableRib2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tableInput)).BeginInit();
             this.tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tableInput24)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tableInput23)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tableInput22)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tableInput21)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tableInput2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tableInput24)).BeginInit();
+            this.tabPage5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tableInput3)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -139,6 +159,7 @@
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Controls.Add(this.tabPage5);
             this.tabControl1.Location = new System.Drawing.Point(106, 3);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -557,6 +578,70 @@
             this.tabPage2.Text = "ЛР2";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // tableInput24
+            // 
+            this.tableInput24.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
+            this.tableInput24.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllHeaders;
+            this.tableInput24.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.tableInput24.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn13,
+            this.dataGridViewTextBoxColumn14});
+            this.tableInput24.Location = new System.Drawing.Point(622, 169);
+            this.tableInput24.Name = "tableInput24";
+            this.tableInput24.RowHeadersWidth = 51;
+            this.tableInput24.RowTemplate.Height = 24;
+            this.tableInput24.Size = new System.Drawing.Size(238, 28);
+            this.tableInput24.TabIndex = 45;
+            this.tableInput24.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn13
+            // 
+            this.dataGridViewTextBoxColumn13.HeaderText = "u1";
+            this.dataGridViewTextBoxColumn13.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
+            this.dataGridViewTextBoxColumn13.Width = 53;
+            // 
+            // dataGridViewTextBoxColumn14
+            // 
+            this.dataGridViewTextBoxColumn14.HeaderText = "u2";
+            this.dataGridViewTextBoxColumn14.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn14.Name = "dataGridViewTextBoxColumn14";
+            this.dataGridViewTextBoxColumn14.Width = 53;
+            // 
+            // colorRibBox
+            // 
+            this.colorRibBox.Location = new System.Drawing.Point(253, 486);
+            this.colorRibBox.Multiline = true;
+            this.colorRibBox.Name = "colorRibBox";
+            this.colorRibBox.Size = new System.Drawing.Size(324, 140);
+            this.colorRibBox.TabIndex = 44;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(253, 466);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(145, 17);
+            this.label13.TabIndex = 43;
+            this.label13.Text = "Рёберная раскраска";
+            // 
+            // colorPointBox
+            // 
+            this.colorPointBox.Location = new System.Drawing.Point(253, 326);
+            this.colorPointBox.Multiline = true;
+            this.colorPointBox.Name = "colorPointBox";
+            this.colorPointBox.Size = new System.Drawing.Size(324, 137);
+            this.colorPointBox.TabIndex = 42;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(253, 306);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(156, 17);
+            this.label14.TabIndex = 41;
+            this.label14.Text = "Вершинная раскраска";
+            // 
             // minDomRibBox
             // 
             this.minDomRibBox.Location = new System.Drawing.Point(253, 281);
@@ -828,6 +913,111 @@
             this.label6.TabIndex = 15;
             this.label6.Text = "Количество вершин";
             // 
+            // tabPage5
+            // 
+            this.tabPage5.Controls.Add(this.label20);
+            this.tabPage5.Controls.Add(this.label21);
+            this.tabPage5.Controls.Add(this.label22);
+            this.tabPage5.Controls.Add(this.stackBox2);
+            this.tabPage5.Controls.Add(this.visitedBox2);
+            this.tabPage5.Controls.Add(this.label19);
+            this.tabPage5.Controls.Add(this.label18);
+            this.tabPage5.Controls.Add(this.label17);
+            this.tabPage5.Controls.Add(this.stackBox);
+            this.tabPage5.Controls.Add(this.visitedBox);
+            this.tabPage5.Controls.Add(this.numBox3);
+            this.tabPage5.Controls.Add(this.button6);
+            this.tabPage5.Controls.Add(this.label15);
+            this.tabPage5.Controls.Add(this.label16);
+            this.tabPage5.Controls.Add(this.tableInput3);
+            this.tabPage5.Location = new System.Drawing.Point(4, 25);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage5.Size = new System.Drawing.Size(1222, 632);
+            this.tabPage5.TabIndex = 2;
+            this.tabPage5.Text = "ЛР3";
+            this.tabPage5.UseVisualStyleBackColor = true;
+            // 
+            // stackBox
+            // 
+            this.stackBox.Location = new System.Drawing.Point(316, 87);
+            this.stackBox.Multiline = true;
+            this.stackBox.Name = "stackBox";
+            this.stackBox.Size = new System.Drawing.Size(145, 117);
+            this.stackBox.TabIndex = 26;
+            // 
+            // visitedBox
+            // 
+            this.visitedBox.Location = new System.Drawing.Point(316, 59);
+            this.visitedBox.Name = "visitedBox";
+            this.visitedBox.Size = new System.Drawing.Size(145, 22);
+            this.visitedBox.TabIndex = 25;
+            // 
+            // numBox3
+            // 
+            this.numBox3.Location = new System.Drawing.Point(290, 8);
+            this.numBox3.Name = "numBox3";
+            this.numBox3.Size = new System.Drawing.Size(145, 22);
+            this.numBox3.TabIndex = 24;
+            this.numBox3.Text = "7";
+            // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(6, 29);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(238, 35);
+            this.button6.TabIndex = 23;
+            this.button6.Text = "Посчитать для G";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(3, 8);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(124, 17);
+            this.label15.TabIndex = 22;
+            this.label15.Text = "Исходный граф G";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(144, 8);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(140, 17);
+            this.label16.TabIndex = 21;
+            this.label16.Text = "Количество вершин";
+            // 
+            // tableInput3
+            // 
+            this.tableInput3.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
+            this.tableInput3.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllHeaders;
+            this.tableInput3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.tableInput3.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn15,
+            this.dataGridViewTextBoxColumn16});
+            this.tableInput3.Location = new System.Drawing.Point(6, 70);
+            this.tableInput3.Name = "tableInput3";
+            this.tableInput3.RowHeadersWidth = 51;
+            this.tableInput3.RowTemplate.Height = 24;
+            this.tableInput3.Size = new System.Drawing.Size(238, 306);
+            this.tableInput3.TabIndex = 20;
+            // 
+            // dataGridViewTextBoxColumn15
+            // 
+            this.dataGridViewTextBoxColumn15.HeaderText = "u1";
+            this.dataGridViewTextBoxColumn15.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn15.Name = "dataGridViewTextBoxColumn15";
+            this.dataGridViewTextBoxColumn15.Width = 53;
+            // 
+            // dataGridViewTextBoxColumn16
+            // 
+            this.dataGridViewTextBoxColumn16.HeaderText = "u2";
+            this.dataGridViewTextBoxColumn16.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn16.Name = "dataGridViewTextBoxColumn16";
+            this.dataGridViewTextBoxColumn16.Width = 53;
+            // 
             // fileNameBox
             // 
             this.fileNameBox.Location = new System.Drawing.Point(3, 46);
@@ -845,69 +1035,74 @@
             this.label2.TabIndex = 6;
             this.label2.Text = "Вариант";
             // 
-            // colorRibBox
+            // label17
             // 
-            this.colorRibBox.Location = new System.Drawing.Point(253, 486);
-            this.colorRibBox.Multiline = true;
-            this.colorRibBox.Name = "colorRibBox";
-            this.colorRibBox.Size = new System.Drawing.Size(324, 140);
-            this.colorRibBox.TabIndex = 44;
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(313, 36);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(35, 17);
+            this.label17.TabIndex = 27;
+            this.label17.Text = "DFS";
             // 
-            // label13
+            // label18
             // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(253, 466);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(145, 17);
-            this.label13.TabIndex = 43;
-            this.label13.Text = "Рёберная раскраска";
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(248, 62);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(62, 17);
+            this.label18.TabIndex = 28;
+            this.label18.Text = "Visited =";
             // 
-            // colorPointBox
+            // label19
             // 
-            this.colorPointBox.Location = new System.Drawing.Point(253, 326);
-            this.colorPointBox.Multiline = true;
-            this.colorPointBox.Name = "colorPointBox";
-            this.colorPointBox.Size = new System.Drawing.Size(324, 137);
-            this.colorPointBox.TabIndex = 42;
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(255, 90);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(55, 17);
+            this.label19.TabIndex = 29;
+            this.label19.Text = "Stack =";
             // 
-            // label14
+            // label20
             // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(253, 306);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(156, 17);
-            this.label14.TabIndex = 41;
-            this.label14.Text = "Вершинная раскраска";
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(255, 262);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(55, 17);
+            this.label20.TabIndex = 34;
+            this.label20.Text = "Stack =";
             // 
-            // tableInput24
+            // label21
             // 
-            this.tableInput24.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
-            this.tableInput24.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllHeaders;
-            this.tableInput24.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.tableInput24.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn13,
-            this.dataGridViewTextBoxColumn14});
-            this.tableInput24.Location = new System.Drawing.Point(622, 169);
-            this.tableInput24.Name = "tableInput24";
-            this.tableInput24.RowHeadersWidth = 51;
-            this.tableInput24.RowTemplate.Height = 24;
-            this.tableInput24.Size = new System.Drawing.Size(238, 28);
-            this.tableInput24.TabIndex = 45;
-            this.tableInput24.Visible = false;
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(248, 234);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(62, 17);
+            this.label21.TabIndex = 33;
+            this.label21.Text = "Visited =";
             // 
-            // dataGridViewTextBoxColumn13
+            // label22
             // 
-            this.dataGridViewTextBoxColumn13.HeaderText = "u1";
-            this.dataGridViewTextBoxColumn13.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
-            this.dataGridViewTextBoxColumn13.Width = 53;
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(313, 208);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(34, 17);
+            this.label22.TabIndex = 32;
+            this.label22.Text = "BFS";
             // 
-            // dataGridViewTextBoxColumn14
+            // stackBox2
             // 
-            this.dataGridViewTextBoxColumn14.HeaderText = "u2";
-            this.dataGridViewTextBoxColumn14.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn14.Name = "dataGridViewTextBoxColumn14";
-            this.dataGridViewTextBoxColumn14.Width = 53;
+            this.stackBox2.Location = new System.Drawing.Point(316, 259);
+            this.stackBox2.Multiline = true;
+            this.stackBox2.Name = "stackBox2";
+            this.stackBox2.Size = new System.Drawing.Size(145, 117);
+            this.stackBox2.TabIndex = 31;
+            // 
+            // visitedBox2
+            // 
+            this.visitedBox2.Location = new System.Drawing.Point(316, 231);
+            this.visitedBox2.Name = "visitedBox2";
+            this.visitedBox2.Size = new System.Drawing.Size(145, 22);
+            this.visitedBox2.TabIndex = 30;
             // 
             // Form1
             // 
@@ -933,11 +1128,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.tableInput)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tableInput24)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tableInput23)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tableInput22)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tableInput21)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tableInput2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tableInput24)).EndInit();
+            this.tabPage5.ResumeLayout(false);
+            this.tabPage5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tableInput3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1026,6 +1224,24 @@
         private System.Windows.Forms.DataGridView tableInput24;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn13;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn14;
+        private System.Windows.Forms.TabPage tabPage5;
+        private System.Windows.Forms.TextBox numBox3;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.DataGridView tableInput3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn15;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn16;
+        private System.Windows.Forms.TextBox stackBox;
+        private System.Windows.Forms.TextBox visitedBox;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.TextBox stackBox2;
+        private System.Windows.Forms.TextBox visitedBox2;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label17;
     }
 }
 
